@@ -2,9 +2,42 @@
 <app-courses></app-courses> -->
 <!-- <app-favorite [isFavorite]="post.isFavorite"></app-favorite> -->
 
-<div *ngIf="courses.length > 0; else noCourses">
-    List of courses
+<!-- <div *ngIf="courses.length > 0; then coursesList else noCourses">
 </div>
+<ng-template #coursesList>
+    List of courses
+</ng-template>
 <ng-template #noCourses>
     No courses yet
-</ng-template>
+</ng-template> -->
+
+<!-- <div [hidden]="courses.length == 0">
+    list of courses
+</div>
+<div [hidden]="courses.length > 0">no courses</div> -->
+
+<!-- <ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map view</a></li>
+    <li [class.active]="viewMode == 'list'">
+        <a (click)="viewMode = 'list'">list view</a>
+    </li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map view content</div>
+    <div *ngSwitchCase="'list'">list view content</div>
+    <div *ngSwitchDefault>otherwise</div>
+</div> -->
+<!-- <button (click)="onadd()">add</button> -->
+<!-- <ul>
+    <li *ngFor="let course of courses; even as i"> -->
+<!-- {{ i }} - {{ course.name }} -->
+<!-- {{ course.name }} -->
+<!-- <button (click)="onRemove(course)">Remove</button> -->
+<!-- <spna></spna>
+    </li>
+</ul> -->
+
+<!-- <app-contact-form>
+
+</app-contact-form> -->
+<signup-form></signup-form>
